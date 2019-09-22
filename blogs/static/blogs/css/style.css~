@@ -1,0 +1,103 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #CBFFD3;
+}
+
+header {
+    background-color: #00FF3B;
+    height: 120px;
+    width: 100%;
+    position: fixed; top:0px; left:0px;
+}
+
+header h1 {
+    text-align: center;
+    color: #FFF;
+    font-family: 'HiraMinPro-W6';
+    font-size: 70px;
+    display: inline;
+    margin: auto;
+}
+
+.header-menu {
+    float: right;
+    height: 100%;
+}
+
+header button {
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    margin: 35px 10px 35px 0px;
+    font-size: 14px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #EEE;
+}
+
+.container {
+    padding: 30px 0px;
+    margin: 120px 200px -30px;
+    background-color: #CBFFD3;
+    min-height: 100%;
+}
+
+.blog_title {
+    display: inline-block;
+    color: black;
+}
+
+.created {
+    float: right;
+}
+
+.profile img {
+    float: right;
+    height: 200px;
+    width: 150px;
+    margin-left: 50px;
+}
+
+.profile_list {
+    display: inline-block;
+}
+
+.detail_title {
+    text-align: center;
+}
+
+.detail_text {
+    margin: 0px auto;
+}
+
+.detail_gototop {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.register {
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.gototop {
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+    font-size:14px;    
+}
+
+.push {
+    height: 30px;
+}
+
+footer {
+    background-color: #00FF3B;
+    height: 30px;
+    width: 100%;
+}

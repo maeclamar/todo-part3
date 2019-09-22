@@ -1,0 +1,25 @@
+{% extends 'blogs/base.html' %}
+
+{% block content1 %}
+
+<form class="form-signin" method="post">{% csrf_token %}
+  {% if form.errors %}
+  <p>ログインエラー。もう一度入力してください。</p>
+  {% endif %}
+  <h2>ログイン</h2>
+  <label>ユーザー名：</label>
+  <input name="username">
+  <br>
+  <br>
+  <label>パスワード：</label>
+  <input type="password" name="password">
+  <br>
+  <br>
+  <button type="submit">ログイン</button>
+  <br>
+</form>
+<hr>
+<p>ユーザー登録がまだの方は<a href="{% url 'blogs:signup' %}">コチラ</a></p>
+<a href="{% url 'blogs:index' %}"><button class="gototop" type="button">トップページに戻る</button></a>
+
+{% endblock %}
