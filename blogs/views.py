@@ -22,6 +22,7 @@ def detail(request, blog_id):
             comment.post = blog
             comment.author = request.user
             comment.save()
+            form = forms.CommentForm()
     else:
         form = forms.CommentForm()
     return render(request, 'blogs/detail.html', {'blog': blog, 'form':form, 'comments':comments})
