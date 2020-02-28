@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>まえちゃんじゃーなる</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'blogs/css/style.css' %}">
+</head>
+ <body>
+  <header>
+    <h1>まえちゃんじゃーなる</h1>
+    {% block content0 %}
+    {% endblock %}
+  </header>
+
+  <div class="container">
+    {% block content1 %}{% endblock %}
+    <div class="push"></div>
+  </div>
+
+  <footer>
+  </footer>
+</body>
+</html>
