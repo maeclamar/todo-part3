@@ -26,5 +26,5 @@ With the server running, input the URL on a browser: http://127.0.0.1:8000
 
 ## Author
 
-Name：Kazuki Maeda
-Department: Science Division of Kyoto University
+- Name：Kazuki Maeda
+- Department: Science Division of Kyoto University

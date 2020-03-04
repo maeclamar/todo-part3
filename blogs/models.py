@@ -32,4 +32,16 @@ class Comment(models.Model):#
     created_date = models.DateField(default=datetime.date.today())
 
     def __str__(self):
-        return self.name
+        return str(self.id)+'. '+self.text
+
+
+class Reply(models.Model):
+    """コメントへの返信"""
+
+    text = models.TextField()
+
+    comment = models.ForeignKey(Comment, on_delete=models.CASCADE)
+    created_date = models.DateField(default=datetime.date.today())
+
+    def __str__(self):
+        return self.text
